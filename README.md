@@ -33,11 +33,11 @@ Support & Feedback
 
 If you have any questions, bugs, or ideas, feel free to reach out:
 
-    GitHub: [your GitHub link]
+    GitHub: comming soon
 
-    Discord: [your Discord link]
+    Discord: comming soon
 
-    CurseForge: [your CurseForge page]
+    CurseForge: 
 
 License
 
