@@ -33,7 +33,7 @@ Support & Feedback
 
 If you have any questions, bugs, or ideas, feel free to reach out:
 
-    GitHub: comming soon
+    GitHub: https://github.com/DeadlyHunt3r/Blood-Arsenal-Reawakened
 
     Discord: comming soon
 
