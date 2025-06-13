@@ -37,7 +37,7 @@ If you have any questions, bugs, or ideas, feel free to reach out:
 
     Discord: comming soon
 
-    CurseForge: 
+    CurseForge: https://www.curseforge.com/minecraft/mc-mods/blood-arsenal-reawakened
 
 License
 
