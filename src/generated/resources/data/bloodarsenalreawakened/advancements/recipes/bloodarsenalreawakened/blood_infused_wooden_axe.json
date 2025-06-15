@@ -11,7 +11,7 @@
       "conditions": {
         "items": [
           {
-            "tag": "forge:ingots/blood_infused_iron"
+            "tag": "bloodarsenalreawakened:blood_infused_iron"
           }
         ]
       }

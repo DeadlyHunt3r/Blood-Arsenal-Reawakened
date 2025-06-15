@@ -23,7 +23,7 @@ Installation
 
     Install Minecraft Forge (recommended version 1.16.5-36.2.34 or newer)
 
-    Install the Blood Magic mod (version 3.0.0 or compatible)
+    Install the Blood Magic mod (version 3.0.0 or newer)
 
     Copy the Blood Arsenal Reawakened mod into the mods folder of your Minecraft installation directory
 
@@ -33,11 +33,11 @@ Support & Feedback
 
 If you have any questions, bugs, or ideas, feel free to reach out:
 
-    GitHub: https://github.com/DeadlyHunt3r/Blood-Arsenal-Reawakened
+    GitHub: https://github.com/DeadlyHunt3r/Blood-Arsenal-Reawakened
 
-    Discord: comming soon
+    Discord: 
 
-    CurseForge: https://www.curseforge.com/minecraft/mc-mods/blood-arsenal-reawakened
+    CurseForge: https://www.curseforge.com/minecraft/mc-mods/blood-arsenal-reawakened
 
 License
 

@@ -1,14 +1,14 @@
 modLoader="javafml" #mandatory
 loaderVersion="[35,)" #mandatory
 license="All rights reserved"
-issueTrackerURL="https://github.com/Arcaratus/BloodArsenal/issues" #optional
+issueTrackerURL="https://github.com/DeadlyHunt3r/Blood-Arsenal-Reawakened/issues" #optional
 
 [[mods]] #mandatory
 modId="bloodarsenalreawakened" #mandatory
 version="${file.jarVersion}" #mandatory
 displayName="Blood Arsenal: Reawakened" #mandatory
 logoFile="examplemod.png" #optional
-authors="Arcaratus" #optional
+authors="DeadlyHunter" #optional
 description='''
 This addon to Blood Magic adds in a bunch of neat tools and weaponry to augment sanguine gameplay.
 '''
@@ -26,3 +26,4 @@ This addon to Blood Magic adds in a bunch of neat tools and weaponry to augment 
     versionRange="[1.16.3-3.0,)"
     ordering="NONE"
     side="BOTH"
+

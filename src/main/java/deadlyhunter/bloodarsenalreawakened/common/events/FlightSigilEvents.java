@@ -8,39 +8,44 @@ import deadlyhunter.bloodarsenalreawakened.common.item.sigil.FlightSigilItem;
 import net.minecraft.item.ItemStack;
 
 @Mod.EventBusSubscriber
-public class FlightSigilEvents
-{
+public class FlightSigilEvents {
+
     @SubscribeEvent
-    public static void onPlayerTick(PlayerTickEvent event)
-    {
+    public static void onPlayerTick(PlayerTickEvent event) {
         PlayerEntity player = event.player;
 
-        // Prüfen, ob Spieler fliegen darf nur wenn Sigil aktiviert und im Inventar ist
-        boolean canFly = false;
+        if (player == null || player.world.isRemote) return;
 
-        for (ItemStack stack : player.inventory.mainInventory)
-        {
-            if (stack.getItem() instanceof FlightSigilItem)
-            {
-                FlightSigilItem sigil = (FlightSigilItem) stack.getItem();
+        boolean hasActiveFlightSigil = false;
 
-                if (sigil.getActivated(stack))
-                {
-                    canFly = true;
+        for (ItemStack stack : player.inventory.mainInventory) {
+            if (stack.getItem() instanceof FlightSigilItem) {
+                if (((FlightSigilItem) stack.getItem()).getActivated(stack)) {
+                    hasActiveFlightSigil = true;
                     break;
                 }
             }
         }
 
-        if (!canFly)
-        {
-            if (!player.isCreative() && !player.isSpectator())
-            {
+        if (hasActiveFlightSigil) {
+            if (!player.abilities.allowFlying) {
+                player.abilities.allowFlying = true;
+                player.sendPlayerAbilities();
+            }
+        } else {
+
+
+            if (player.getPersistentData().getBoolean("BloodArsenal_FlightEnabled")) {
                 player.abilities.allowFlying = false;
                 player.abilities.isFlying = false;
                 player.stopFallFlying();
                 player.sendPlayerAbilities();
+                player.getPersistentData().remove("BloodArsenal_FlightEnabled");
             }
         }
+
+
+        player.getPersistentData().putBoolean("BloodArsenal_FlightEnabled", hasActiveFlightSigil);
     }
 }
+
