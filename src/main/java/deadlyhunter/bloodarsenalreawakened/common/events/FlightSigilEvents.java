@@ -35,17 +35,17 @@ public class FlightSigilEvents {
         } else {
 
 
-            if (player.getPersistentData().getBoolean("BloodArsenal_FlightEnabled")) {
+            if (player.getPersistentData().getBoolean("BloodArsenalReawakened_FlightEnabled")) {
                 player.abilities.allowFlying = false;
                 player.abilities.isFlying = false;
                 player.stopFallFlying();
                 player.sendPlayerAbilities();
-                player.getPersistentData().remove("BloodArsenal_FlightEnabled");
+                player.getPersistentData().remove("BloodArsenalReawakened_FlightEnabled");
             }
         }
 
 
-        player.getPersistentData().putBoolean("BloodArsenal_FlightEnabled", hasActiveFlightSigil);
+        player.getPersistentData().putBoolean("BloodArsenalReawakened_FlightEnabled", hasActiveFlightSigil);
     }
 }
 
